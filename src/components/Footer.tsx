@@ -1,5 +1,11 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 import logoImg from '../assets/logo.png';
+
+const TikTokIcon = ({ size = 24, className = "" }) => (
+    <svg width={size} height={size} className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.78-1.5 5.54-3.9 7.03-2.61 1.63-6 1.6-8.52.09-2.52-1.49-4.04-4.2-3.8-7.14.22-3.04 2.1-5.74 4.97-6.84 1.66-.64 3.51-.71 5.23-.29v4.29c-1.3-.23-2.64-.1-3.81.54-1.25.68-2.11 1.95-2.25 3.37-.15 1.54.49 3.09 1.68 4.09 1.18.99 2.84 1.3 4.3.82 2.15-.71 3.58-2.73 3.55-5v-17.8z" />
+    </svg>
+);
 
 export default function Footer() {
     return (
@@ -27,6 +33,19 @@ export default function Footer() {
                                 Transformamos el futuro académico de cada estudiante con tutorías
                                 personalizadas y un acompañamiento cercano.
                             </p>
+                            
+                            {/* Redes Sociales */}
+                            <div className="flex gap-4 mt-6">
+                                <a href="https://www.facebook.com/academiasgenesys" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-genesys-indigo/5 border border-genesys-indigo/10 flex items-center justify-center text-genesys-indigo hover:bg-genesys-indigo hover:-translate-y-1 hover:text-white transition-all duration-300">
+                                    <Facebook size={18} />
+                                </a>
+                                <a href="https://www.instagram.com/academiasgenesys/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-genesys-indigo/5 border border-genesys-indigo/10 flex items-center justify-center text-genesys-indigo hover:bg-genesys-indigo hover:-translate-y-1 hover:text-white transition-all duration-300">
+                                    <Instagram size={18} />
+                                </a>
+                                <a href="https://www.tiktok.com/@academiasgenesys" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-genesys-indigo/5 border border-genesys-indigo/10 flex items-center justify-center text-genesys-indigo hover:bg-genesys-indigo hover:-translate-y-1 hover:text-white transition-all duration-300">
+                                    <TikTokIcon size={18} />
+                                </a>
+                            </div>
                         </div>
 
                         {/* Links */}
